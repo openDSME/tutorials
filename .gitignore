@@ -34,6 +34,9 @@ Makefile
 # GUI
 .qtenvrc
 
+# Results
+*.anf
+
 # Directories
 out/
 results/
