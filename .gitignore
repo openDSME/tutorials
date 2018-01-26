@@ -29,7 +29,7 @@
 *.app
 
 # Make
-Makefile
+*/src/Makefile
 
 # GUI
 .qtenvrc
