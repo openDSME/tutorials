@@ -12,19 +12,18 @@ module DSMEHost extends NodeBase
 {
     parameters:
         string applicationType;
-       
+
         mobilityType = "StationaryMobility";
         *.interfaceTableModule = default(absPath(".interfaceTable"));
 
     submodules:
         application: <applicationType> like ISourceOrSink;
-        
         interfaceTable: InterfaceTable;
-        
         wlan: WirelessInterface {
             parameters:
-                macType   = "DSME";
+                macType = "DSME";
                 radioType = "Ieee802154NarrowbandScalarRadio";
+                @display("p=586.92,299.088");
         }
 
     connections allowunconnected:
