@@ -5,21 +5,21 @@ import source_sink.simulations.DSMEHost;
 
 network SourceSink
 {
-    @display("bgb=294,94");
+    @display("bgb=300,100");
     submodules:
         source: DSMEHost {
             parameters:
-                @display("i=block/source;p=167,50");
+                @display("is=vs;i=block/source;p=170,50");
                 applicationType = "Source";
         }
 
         sink: DSMEHost {
             parameters:
-                @display("i=block/sink;p=25,50");
+                @display("is=vs;i=block/sink;p=25,50");
                 applicationType = "Sink";
         }
 
         radioMedium: Ieee802154NarrowbandScalarRadioMedium {
-            @display("p=242,21");
+            @display("p=250,20");
         }
 }
